@@ -1,0 +1,24 @@
+nav#main-nav
+    font-family: 'PT Serif', serif
+
+nav#main-nav img
+    height: 74.16px
+    margin-left: 200px
+nav#main-nav ul
+    float: right
+    list-style: none
+    margin-top: 46px
+    margin-right: 200px
+    & li
+        display: inline-block
+        float: left
+        padding-right: 40px
+        & a.active
+            color: $selectedLink
+        & a
+            text-decoration: none
+            color: $mainText
+            text-transform: uppercase
+            font-size: 1rem
+            &:hover
+                color: $hoverLink !important
