@@ -1,8 +1,10 @@
+// NAV
 nav#main-nav
     font-family: 'PT Serif', serif
 
-nav#main-nav img
-    height: 74.16px
+nav#main-nav img#logo
+    height: 40px
+    margin-top: 30px
     margin-left: 200px
 nav#main-nav ul
     float: right
@@ -13,12 +15,32 @@ nav#main-nav ul
         display: inline-block
         float: left
         padding-right: 40px
-        & a.active
-            color: $selectedLink
         & a
             text-decoration: none
             color: $mainText
             text-transform: uppercase
             font-size: 1rem
             &:hover
-                color: $hoverLink !important
+                color: $hoverLink
+            &.active
+                color: $selectedLink
+                &:hover
+                    color: $selectedLink !important
+
+footer nav#footer-nav ul
+    float: right
+    padding: 0
+    margin: 0 200px 0 0
+    & li
+        list-style: none
+        float: left
+        margin-left: 24px
+        & a
+            text-decoration: none
+            color: #FFF
+            &.active
+                color: $selectedLink
+                &:hover
+                    color: $selectedLink !important
+            &:hover
+                color: $hoverLink
