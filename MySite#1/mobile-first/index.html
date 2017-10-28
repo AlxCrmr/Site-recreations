@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Company</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
         <script src="https://use.fontawesome.com/092c94a1fb.js"></script>
@@ -21,6 +22,8 @@
     </nav>
 
     <header>
+         <img src="images/hand-phone.png" alt="">
+
         <div class="main-text">
             <h1>We are Comp<span class="blue">any</span></h1>
             <hr>
@@ -28,12 +31,11 @@
                 vulputate, turpis ut aliquet mattis, nisl quam hendrerit dolor, et cursus mauris
                 libero a diam. Cras a aliquam velit.</p>
         </div>
-             <img src="images/hand-phone.png" alt="">
     </header>
 
     <section id="company-perks">
         <div class="perk-column column-left">
-            <img src="images/padlock.png" alt="">
+            <img src="images/padlock.png"class="padlock-img" alt="">
             <br>
             <strong>Secure Communication</strong>
             <p>Lorem ipsum dolor.</p>
@@ -60,8 +62,6 @@
                     leo, a vulputate lorem gravida sit amet. Cras iaculis gravida orci, ac dictum nunc.
                     Nullam urna metus, malesuada ut enim sed, accumsan mattis mi. </h2>
 
-                    <img src="images/black-ipad.png" alt="">
-
                 <div class="left-section">
                     <h3>Provider Flexibility</h3>
                     <p>Phasellus tempor, leo eu ultrices mattis, magna ligula rhoncus orci, ut
@@ -69,6 +69,8 @@
                     <p>Vestibulum dignissim ligula at lectus ultrices, eu tincidunt velit fermentum.
                         Nulla ac ante turpis.</p>
                 </div>
+
+                <img src="images/black-ipad.png" alt="">
 
                 <div class="right-section">
                     <h3>Patient Satisfaction</h3>
@@ -92,46 +94,54 @@
 
         <div class="common-case">
             <img src="images/medic-lab.png" alt="">
-            <h4>Urgent Care</h4>
-            <p>Nunc egestas lorem purus, in efficitur ante pharetra at. Nunc commodo mauris
-                 eu dui vulputate volutpat.</p>
-                <ul>
-                    <li>Donec hendrerit quis diam vel ultrices. </li>
-                    <li>Proin sodales ipsum id ex convallis...</li>
-                </ul>
-                <a href="#">Read more [..]</a>
+            <div class="common-case-text">
+                <h4>Urgent Care</h4>
+                <p>Nunc egestas lorem purus, in efficitur ante pharetra at. Nunc commodo mauris
+                     eu dui vulputate volutpat.</p>
+                    <ul>
+                        <li>Donec hendrerit quis diam vel ultrices. </li>
+                        <li>Proin sodales ipsum id ex convallis...</li>
+                    </ul>
+                    <a href="#">Read more [..]</a>
+            </div>
         </div>
         <div class="common-case">
             <img src="images/management-book.png" alt="">
-            <h4>Chronic Condition <br> Management</h4>
-            <p>Aenean euismod lacus lorem, in pharetra quam ultrices id. Nam vel tempor justo,
-            in sodales nibh.</p>
-                <ul>
-                    <li>Sed interdum eros nec quam finibus </li>
-                    <li>at congue turpis placerat... </li>
-                </ul>
-                <a href="#">Read more [..]</a>
+            <div class="common-case-text">
+                <h4>Chronic Condition <br> Management</h4>
+                <p>Aenean euismod lacus lorem, in pharetra quam ultrices id. Nam vel tempor justo,
+                in sodales nibh.</p>
+                    <ul>
+                        <li>Sed interdum eros nec quam finibus </li>
+                        <li>at congue turpis placerat... </li>
+                    </ul>
+                    <a href="#">Read more [..]</a>
+            </div>
         </div>
         <div class="common-case">
             <img src="images/team.png" alt="">
-            <h4>Complex Case <br> Coordination</h4>
-            <p>Curabitur consequat eros turpis, a laoreet ipsum porta sit amet. Duis ultricies
-                turpis quis orci dapibus, vitae vehicula libero venenatis.</p>
-                <ul>
-                    <li>Nullam dignissim tortor id sapien... </li>
-                </ul>
-                <a href="#">Read more [..]</a>
+            <div class="common-case-text">
+                <h4>Complex Case <br> Coordination</h4>
+                <p>Curabitur consequat eros turpis, a laoreet ipsum porta sit amet. Duis ultricies
+                    turpis quis orci dapibus, vitae vehicula libero venenatis.</p>
+                    <ul>
+                        <li>Nullam dignissim tortor id sapien... </li>
+                    </ul>
+                    <a href="#">Read more [..]</a>
+            </div>
         </div>
         <div class="common-case">
             <img src="images/home.png" alt="">
-            <h4>Home Health Services</h4>
-            <p>Pellentesque lobortis neque at nunc semper egestas. Phasellus ex ipsum,
-                aliquam ut ante id, tempus ornare ligula. Maecenas vitae dignissim purus.</p>
-                <ul>
-                    <li>Integer non bibendum mi.</li>
-                    <li>Integer pharetra dolor ut mauris...</li>
-                </ul>
-                <a href="#">Read more [..]</a>
+            <div class="common-case-text">
+                <h4>Home Health Services</h4>
+                <p>Pellentesque lobortis neque at nunc semper egestas. Phasellus ex ipsum,
+                    aliquam ut ante id, tempus ornare ligula. Maecenas vitae dignissim purus.</p>
+                    <ul>
+                        <li>Integer non bibendum mi.</li>
+                        <li>Integer pharetra dolor ut mauris...</li>
+                    </ul>
+                    <a href="#">Read more [..]</a>
+            </div>
         </div>
 
         <div class="right-arrow arrow-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
@@ -191,8 +201,6 @@
 
 
         <footer>
-            <span class="copyright">Copyright All Rights Reserved &copy; 2017</span>
-            <span class="attribution">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
             <nav id="footer-nav">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
@@ -202,6 +210,9 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <br>
+            <span class="copyright">Copyright All Rights Reserved &copy; 2017</span>
+            <span class="attribution">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
         </footer>
     </body>
 </html>
