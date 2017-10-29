@@ -1,12 +1,29 @@
 // FOOTER
 footer
-    height: 100px
+    height: 80px
     color: #FFF
     background: $mainBlue
+    @media only screen and (min-width: 768px)
+        height: 150px
+    & .container
+        height: 80px
     & span.attribution, span.copyright
-        font-size: .6rem
+        font-size: .5rem
         display: block
         text-align: center
         margin: 5px
+        @media only screen and (min-width: 620px)
+            font-size: .6rem
+        @media only screen and (min-width: 768px)
+            font-size: .9rem
         & a
             color: #FFF
+    & span
+        @media only screen and (min-width: 768px)
+            position: relative
+            top: 30px
+        &.copyright
+            @media only screen and (min-width: 768px)
+                margin: 5px 180px
+            & a
+                text-decoration: none

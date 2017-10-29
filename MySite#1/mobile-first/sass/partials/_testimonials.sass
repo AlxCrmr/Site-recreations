@@ -1,4 +1,74 @@
 // TESTIMONIALS
 section#testimonials
-    & img
-        width: 200px
+    & .testimonial
+        width: 260px
+        background: $hoverBlue
+        margin: 70px 0
+        color: #FFF
+        padding: 10px
+        @media only screen and (min-width: 412px)
+            min-width: 360px
+        @media only screen and (min-width: 768px)
+            min-width: 708px
+            padding: 20px
+            margin: 130px 0
+            height: 300px
+        &-img1
+            position: relative
+            top: -640px
+            @media only screen and (min-width: 412px)
+                top: -560px
+            @media only screen and (min-width: 768px)
+                top: -1100px
+        &-img2
+            position: relative
+            top: -475px
+            @media only screen and (min-width: 412px)
+                top: -450px
+            @media only screen and (min-width: 768px)
+                top: -880px
+        &-img3
+            position: relative
+            top: -330px
+            @media only screen and (min-width: 768px)
+                top: -650px
+        &-mid, &-right
+            position: relative
+            top: -10px
+        & p
+            font-size: .7rem
+            line-height: 15px
+            font-size: .7rem
+            @media only screen and (min-width: 768px)
+                font-size: 1.2rem
+                line-height: 30px
+        & span
+            font-size: .7rem
+            font-family: 'PT Serif', serif
+            @media only screen and (min-width: 768px)
+                font-size: 1.3rem
+    & .img-container
+        height: 20px
+        margin-bottom: 10px
+        @media only screen and (min-width: 768px)
+            margin-bottom:  50px
+        & img
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            border: 3px solid $hoverBlue
+            display: block
+            position: relative
+            left: 150px
+            @media only screen and (min-width: 412px)
+                left: 250px
+            @media only screen and (min-width: 768px)
+                width: 200px
+                height: 200px
+                left: 470px
+    & a.see-more
+        position: relative
+        top: -45px
+        @media only screen and (min-width: 768px)
+            font-size: 2rem
+            top: -85px

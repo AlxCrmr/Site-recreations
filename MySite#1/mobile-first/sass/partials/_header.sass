@@ -3,17 +3,41 @@ header
     width: 100%
     display: block
     text-align: center
-    padding: 0 30px
+    &::after
+        content: " "
+        display: block
+        height: 0
+        clear: both
     & img
-        width: 300px
+        width: 150px
         display: block
         margin-left: auto
         margin-right: auto
         margin-top: 100px
+        @media only screen and (min-width: 620px)
+            width: 300px
+        @media only screen and (min-width: 1024px)
+            float: right
+            width: 452px
     & div.main-text
         display: block
         margin-top: 0px
-        line-height: 30px
+        line-height: 20px
+        font-size: .7rem
+        @media only screen and (min-width: 620px)
+            font-size: 1rem
+            line-height: 30px
+        @media only screen and (min-width: 768px)
+            width: 550px
+            margin: 0 auto
+        @media only screen and (min-width: 1024px)
+            float: left
+            width: 452px
+            position: relative
+            top: 200px
     & hr
         border: .5px solid $hoverBlue
         width: 15%
+    & div.container.gutter
+        @media only screen and (min-width: 1024px)
+            padding: 0 50px

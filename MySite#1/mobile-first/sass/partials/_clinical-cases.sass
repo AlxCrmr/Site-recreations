@@ -1,31 +1,81 @@
 // CLINICAL CASES
 section#clinical-cases
     width: 100%
-    padding: 0 30px
     & h2
         font-weight: 400
         text-align: center
         margin-top: 50px
+        @media only screen and (min-width: 768px)
+            font-size: 1.5rem
     & .common-case
-        max-width: 600px
-        height: 270px
+        max-width: 320px
+        height: 150px
         background: $mainBlue
         margin: 20px auto
         color: #FFF
+        @media only screen and (min-width: 620px)
+            max-width: 620px
+            height: 270px
+        @media only screen and (min-width: 768px)
+            max-width: 708px
+            margin: 50px auto
         &-text
             float: right
-            width: 270px
-            padding: 10px
+            width: 110px
+            padding: 5px
+            @media only screen and (min-width: 412px)
+                width: 150px
+            @media only screen and (min-width: 620px)
+                width: 270px
+                padding: 10px
+            @media only screen and (min-width: 768px)
+                width: 340px
         & img
-            margin: 55px 10px
+            margin: 5px
             float: left
-            width: 270px
+            width: 130px
+            height: 140px
+            @media only screen and (min-width: 412px)
+                width: 150px
+            @media only screen and (min-width: 620px)
+                width: 270px
+                margin: 55px 10px
+            @media only screen and (min-width: 768px)
+                width: 340px
+                height: 250px
+                margin: 10px
         & h4
             text-transform: uppercase
             text-align: center
+            margin: 5px 0 0px
             margin-bottom: 0
+            font-size: .7rem
+            @media only screen and (min-width: 620px)
+                font-size: 1.125rem
+        & p
+            font-size: .5rem
+            margin-top: 3px
+            @media only screen and (min-width: 620px)
+                font-size: 1rem
+        & ul
+            padding: 0
+            margin-top: 0
+        & li
+            font-size: .5rem
+            padding: 0
+            @media only screen and (min-width: 620px)
+                font-size: 1rem
         & a
             color: #FFF
             text-decoration: none
             float: right
             margin-right: 10px
+            margin-top: 0
+            padding-top: 0
+            position: relative
+            bottom: 15px
+            font-size: .5rem
+            @media only screen and (min-width: 412px)
+                margin-top: 10px
+            @media only screen and (min-width: 620px)
+                font-size: 1rem
