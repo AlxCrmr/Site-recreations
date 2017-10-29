@@ -1,12 +1,19 @@
 // CLINICAL CASES
 section#clinical-cases
     width: 100%
+    @media only screen and (min-width: 1024px)
+        &::after
+            content: ""
+            clear: both
+            display: table
     & h2
         font-weight: 400
         text-align: center
         margin-top: 50px
         @media only screen and (min-width: 768px)
             font-size: 1.5rem
+        @media only screen and (min-width: 1024px)
+            line-height: 30px
     & .common-case
         max-width: 320px
         height: 150px
@@ -19,6 +26,11 @@ section#clinical-cases
         @media only screen and (min-width: 768px)
             max-width: 708px
             margin: 50px auto
+        @media only screen and (min-width: 1024px)
+            width: 200px
+            float: left
+            margin: 5px
+            height: 460px
         &-text
             float: right
             width: 110px
@@ -30,6 +42,9 @@ section#clinical-cases
                 padding: 10px
             @media only screen and (min-width: 768px)
                 width: 340px
+            @media only screen and (min-width: 1024px)
+                width: 180px
+                float: none
         & img
             margin: 5px
             float: left
@@ -44,6 +59,10 @@ section#clinical-cases
                 width: 340px
                 height: 250px
                 margin: 10px
+            @media only screen and (min-width: 1024px)
+                width: 180px
+                height: 100px
+                float: none
         & h4
             text-transform: uppercase
             text-align: center
@@ -52,6 +71,8 @@ section#clinical-cases
             font-size: .7rem
             @media only screen and (min-width: 620px)
                 font-size: 1.125rem
+            @media only screen and (min-width: 1024px)
+                margin-top: 0
         & p
             font-size: .5rem
             margin-top: 3px
