@@ -990,17 +990,32 @@ header img {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 1396px) {
+  /* line 11, ../sass/partials/_header.sass */
+  header img {
+    width: 500px;
+    position: relative;
+    left: 80px;
+    top: 205px;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1492px) {
+  /* line 11, ../sass/partials/_header.sass */
+  header img {
+    left: 500px;
+  }
+}
 @media only screen and (min-width: 1600px) {
   /* line 11, ../sass/partials/_header.sass */
   header img {
     width: 600px;
     margin: 0;
-    position: relative;
-    left: 600px;
+    left: 300px;
     top: 210px;
   }
 }
-/* line 29, ../sass/partials/_header.sass */
+/* line 36, ../sass/partials/_header.sass */
 header div.main-text {
   display: block;
   margin-top: 0px;
@@ -1008,21 +1023,21 @@ header div.main-text {
   font-size: 0.7rem;
 }
 @media only screen and (min-width: 620px) {
-  /* line 29, ../sass/partials/_header.sass */
+  /* line 36, ../sass/partials/_header.sass */
   header div.main-text {
     font-size: 1rem;
     line-height: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 29, ../sass/partials/_header.sass */
+  /* line 36, ../sass/partials/_header.sass */
   header div.main-text {
     width: 550px;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 29, ../sass/partials/_header.sass */
+  /* line 36, ../sass/partials/_header.sass */
   header div.main-text {
     float: left;
     width: 452px;
@@ -1031,21 +1046,34 @@ header div.main-text {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 1396px) {
+  /* line 36, ../sass/partials/_header.sass */
+  header div.main-text {
+    top: -200px;
+    left: -60px;
+  }
+}
+@media only screen and (min-width: 1492px) {
+  /* line 36, ../sass/partials/_header.sass */
+  header div.main-text {
+    left: -10px;
+  }
+}
 @media only screen and (min-width: 1600px) {
-  /* line 29, ../sass/partials/_header.sass */
+  /* line 36, ../sass/partials/_header.sass */
   header div.main-text {
     width: 600px;
     top: -300px;
     left: -100px;
   }
 }
-/* line 50, ../sass/partials/_header.sass */
+/* line 62, ../sass/partials/_header.sass */
 header hr {
   border: 0.5px solid #6f91ab;
   width: 15%;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 53, ../sass/partials/_header.sass */
+  /* line 65, ../sass/partials/_header.sass */
   header div.container.gutter {
     padding: 0 50px;
   }
