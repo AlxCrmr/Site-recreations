@@ -3,6 +3,9 @@ footer
     height: 80px
     color: #FFF
     background: $mainBlue
+    
+    @media only screen and (min-width: 412px)
+        height: 100px
     @media only screen and (min-width: 768px)
         height: 150px
     & .container
@@ -19,8 +22,10 @@ footer
         & a
             color: #FFF
     & span
-        @media only screen and (min-width: 768px)
+        @media only screen and (min-width: 412px)
             position: relative
+            top: 20px
+        @media only screen and (min-width: 768px)
             top: 30px
         @media only screen and (min-width: 1600px)
             top: 50px

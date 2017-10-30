@@ -56,6 +56,8 @@ nav#main-nav
 nav#footer-nav
     display: block
     height: 20px
+    @media only screen and (min-width: 1200px)
+        width: 1200px
     & ul
         display: inline-block
         padding: 0 30px
@@ -76,7 +78,14 @@ nav#footer-nav
             display: inline-block
             margin: 0 auto
             float: left
-            padding: 0 10px
+            padding: 0 10px !important
+            width: 50px !important
+            @media only screen and (min-width: 412px)
+                width: 70px !important
+            @media only screen and (min-width: 768px)
+                width: 150px!important
+            @media only screen and (min-width: 1200px)
+                width: 100px !important
             & a
                 text-decoration: none
                 color: #FFF
