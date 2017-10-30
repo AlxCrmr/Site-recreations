@@ -11,7 +11,7 @@ nav#main-nav
         width: 100%
     & ul
         @media only screen and (min-width: 1200px)
-            min-width: 600px
+            min-width: 600px !important
             display: inline-block
     &.main-nav-gutter
         @media only screen and (min-width: 450px)
@@ -20,7 +20,7 @@ nav#main-nav
         @media only screen and (min-width: 1200px)
             padding: 0 100px
         @media only screen and (min-width: 1600px)
-            padding: 0
+            padding: 0 200px 0 100px
     & #logo
         margin-top: 50px
         display: block
@@ -69,6 +69,8 @@ nav#footer-nav
             top: 12px
         @media only screen and (min-width: 1024px)
             top: 20px
+        @media only screen and (min-width: 1600px)
+            top: 40px !important
         & li
             list-style: none
             display: inline-block
@@ -79,6 +81,7 @@ nav#footer-nav
                 text-decoration: none
                 color: #FFF
                 margin: 0
+
 nav#footer-nav ul
     position: relative
     top: 10px
@@ -114,6 +117,8 @@ nav#main-nav, nav#main-nav ul, nav#footer-nav ul
         padding: 0
     @media only screen and (min-width: 1024px)
         min-width: 1024px
+    @media only screen and (min-width: 1600px)
+        min-width: 600px
 
 
 nav#footer-nav

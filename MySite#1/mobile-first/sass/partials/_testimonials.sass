@@ -1,10 +1,20 @@
 // TESTIMONIALS
 section#testimonials
+    & div.arrow-btn
+        position: relative
+        top: 100px
     @media only screen and (min-width: 1024px)
     &::after
         content: ""
         clear: both
         display: table
+    @media only screen and (min-width: 1600px)
+        margin: 120px 0
+    & .container
+        @media only screen and (min-width: 1600px)
+            width: 1600px
+            & .gutter
+                padding: 0
     & .testimonial
         width: 260px
         background: $hoverBlue
@@ -13,6 +23,7 @@ section#testimonials
         padding: 10px
         margin-left: auto
         margin-right: auto
+        border-radius: 3px
         @media only screen and (min-width: 412px)
             min-width: 360px
         @media only screen and (min-width: 768px)
@@ -25,6 +36,12 @@ section#testimonials
             height: 550px
             float: left
             margin: 0 10px
+        @media only screen and (min-width: 1600px)
+            width: 400px
+            height: 250px
+            z-index: -2
+            padding: 10px
+            margin: 0 30px
         &-img1
             position: relative
             top: -640px
@@ -35,6 +52,9 @@ section#testimonials
             @media only screen and (min-width: 1024px)
                 top: -110px
                 left: 210px !important
+            @media only screen and (min-width: 1600px)
+                left: 355px !important
+                top: -80px
         &-img2
             position: relative
             top: -475px
@@ -45,6 +65,9 @@ section#testimonials
             @media only screen and (min-width: 1024px)
                 top: -220px
                 left: 495px !important
+            @media only screen and (min-width: 1600px)
+                top: -200px
+                left: 815px !important
         &-img3
             position: relative
             top: -330px
@@ -53,6 +76,9 @@ section#testimonials
             @media only screen and (min-width: 1024px)
                 top: -330px
                 left: 775px !important
+            @media only screen and (min-width: 1600px)
+                top: -320px
+                left: 1275px !important
         &-mid, &-right
             position: relative
             top: -10px
@@ -67,16 +93,27 @@ section#testimonials
                 line-height: 30px
             @media only screen and (min-width: 1024px)
                 font-size: 1rem
-        & span
+            @media only screen and (min-width: 1600px)
+                font-size: 0.875rem
+                line-height: 22px
+        & span.testimonial-name
             font-size: .7rem
             font-family: 'PT Serif', serif
+            font-weight: 700
             @media only screen and (min-width: 768px)
                 font-size: 1.3rem
+            @media only screen and (min-width: 1600px)
+                font-size: 1rem
+                position: relative
+                top: 20px
+
     & .img-container
         height: 20px
         margin-bottom: 10px
         @media only screen and (min-width: 768px)
             margin-bottom:  50px
+        @media only screen and (min-width: 1600px)
+            z-index: -1
         & img
             width: 100px
             height: 100px
@@ -97,6 +134,10 @@ section#testimonials
                 width: 110px
                 height: 110px
                 left: 0
+            @media only screen and (min-width: 1600px)
+                left: 0px
+                width: 120px
+                height: 120px
     & a.see-more
         position: relative
         top: -45px

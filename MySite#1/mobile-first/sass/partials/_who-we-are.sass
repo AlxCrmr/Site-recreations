@@ -1,18 +1,27 @@
 // WHO WE ARE
 section#who-we-are
     width: 100%
-    & div.container.gutter
-        @media only screen and (min-width: 768px)
-            padding: 0 50px
-        @media only screen and (min-width: 1024px)
-            padding: 0 80px
-            line-height: 23px
-            & .left-section
-                float: left
-                width: 260px
-            & .right-section
-                float: right
-                width: 260px
+    & div.container
+        @media only screen and (min-width: 1600px)
+            width: 1600px
+        &.gutter
+            @media only screen and (min-width: 768px)
+                padding: 0 50px
+            @media only screen and (min-width: 1024px)
+                padding: 0 80px
+                line-height: 23px
+            @media only screen and (min-width: 1600px)
+                padding: 0 80px
+                & .left-section
+                    float: left
+                    width: 260px
+                    @media only screen and (min-width: 1600px)
+                        width: 400px
+                & .right-section
+                    float: right
+                    width: 260px
+                    @media only screen and (min-width: 1600px)
+                        width: 400px
 
     & h2
         font-weight: 400
@@ -22,8 +31,8 @@ section#who-we-are
         @media only screen and (min-width: 768px)
             font-size: 1.5rem
         @media only screen and (min-width: 1024px)
-            margin-bottom: 50px
-            line-height: 30px
+            margin: 100px 0
+            line-height: 36px
     & h3
         margin-bottom: 5px
         font-size: .7rem
@@ -33,6 +42,9 @@ section#who-we-are
             font-size: 1.1rem
             padding-top: 0
             margin-top: 0
+        @media only screen and (min-width: 1600px)
+            font-size:  1.2rem
+            margin-bottom: 10px
     & p
         margin-top: 0px
         font-size: .7rem
@@ -42,6 +54,9 @@ section#who-we-are
             font-size: 1.1rem
         @media only screen and (min-width: 1024px)
             font-size: 1rem
+        @media only screen and (min-width: 1600px)
+            line-height: 32px
+
 
     & img
         margin: 30px auto
@@ -53,4 +68,6 @@ section#who-we-are
             width: 300px
         @media only screen and (min-width: 1024px)
             display: inline-block
-            margin: 0 20px
+            margin: 20px 300px
+        @media only screen and (min-width: 1600px)
+            margin: 0 150px

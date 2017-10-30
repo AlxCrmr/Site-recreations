@@ -1,11 +1,17 @@
 // CLINICAL CASES
 section#clinical-cases
     width: 100%
+    & .container
+        @media only screen and (min-width: 1600px)
+            width: 1600px
     @media only screen and (min-width: 1024px)
         &::after
             content: ""
             clear: both
             display: table
+    & .gutter
+        @media only screen and (min-width: 1600px)
+            padding: 0
     & h2
         font-weight: 400
         text-align: center
@@ -14,12 +20,18 @@ section#clinical-cases
             font-size: 1.5rem
         @media only screen and (min-width: 1024px)
             line-height: 30px
+        @media only screen and (min-width: 1600px)
+            width: 1000px
+            margin : 70px auto
     & .common-case
         max-width: 320px
         height: 150px
         background: $mainBlue
         margin: 20px auto
         color: #FFF
+        border-radius: 3px
+        cursor: pointer
+        transition: all .2s linear
         @media only screen and (min-width: 620px)
             max-width: 620px
             height: 270px
@@ -31,6 +43,17 @@ section#clinical-cases
             float: left
             margin: 5px
             height: 460px
+        @media only screen and (min-width: 1600px)
+            width: 330px
+            height: 460px
+            margin: 20px
+            padding: 5px
+        &:hover
+            background: $hoverBlue
+            transition: all .2s linear
+            & img
+                opacity: .7
+                transition: all .2s linear
         &-text
             float: right
             width: 110px
@@ -45,6 +68,8 @@ section#clinical-cases
             @media only screen and (min-width: 1024px)
                 width: 180px
                 float: none
+            @media only screen and (min-width: 1600px)
+                width: 300px
         & img
             margin: 5px
             float: left
@@ -63,6 +88,9 @@ section#clinical-cases
                 width: 180px
                 height: 100px
                 float: none
+            @media only screen and (min-width: 1600px)
+                width: 300px
+                height: auto
         & h4
             text-transform: uppercase
             text-align: center
@@ -86,6 +114,8 @@ section#clinical-cases
             padding: 0
             @media only screen and (min-width: 620px)
                 font-size: 1rem
+            @media only screen and (min-width: 1600px)
+                margin-left: 15px
         & a
             color: #FFF
             text-decoration: none
@@ -100,3 +130,5 @@ section#clinical-cases
                 margin-top: 10px
             @media only screen and (min-width: 620px)
                 font-size: 1rem
+            &:hover
+                color: $hoverLink
