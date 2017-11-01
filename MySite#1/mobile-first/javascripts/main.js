@@ -1,33 +1,79 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+/* ===== CASES ==== */
+var case_index = 1;
 
-  var common_case_text = document.querySelectorAll(".common-case-text");
+showCases(case_index);
 
-  var caseIndex = 1;
-  showDivs(caseIndex);
+function plusDivs(add) {
+  showCases(case_index += add);
+}
 
-  function plusDivs(add) {
-    showDivs(caseIndex += add);
+function minusDivs(subtract) {
+  showCases(case_index -= subtract);
+}
+
+function showCases(n) {
+  var posts = document.getElementsByClassName("cases-container");
+  if (n > posts.length) {
+      case_index = 1
+  }
+  if (n < 1) {
+      case_index = posts.length
   }
 
-  function showDivs(n) {
-    var casePosts = document.getElementsByClassName("common_case_text");
-    if (n > casePosts.length) {
-        caseIndex = 1
+  for (var i = 0; i < posts.length; i++) {
+     posts[i].style.display = "none";
+     posts[i].classList.remove("fade");
+      }
+      posts[case_index-1].style.display = "block";
+      posts[case_index-1].classList.add("fade");
     }
-    if (n < 1) {
-        caseIndex = casePosts.length
-    }
-    for (var i = 0; i < casePosts.length; i++) {
-       casePosts[i].style.display = "none";
-       casePosts[i].classList.remove("casePostsFade");
-    }
-      casePosts[caseIndex-1].style.display = "block";
-      casePosts[caseIndex-1].classList.add("casePostsFade");
+
+document.getElementById("case-next").addEventListener("click", function () {
+    plusDivs(1)
+});
+
+document.getElementById("case-prev").addEventListener("click", function () {
+    minusDivs(1)
+});
+
+
+
+/* ===== TESTIMONIALS ==== */
+
+var testimonialIndex = 1;
+
+showTestimonials(testimonialIndex);
+
+function plusTestimonials(add) {
+  showTestimonials(testimonialIndex += add);
+}
+
+function minusTestimonials(subtract) {
+  showTestimonials(testimonialIndex -= subtract);
+}
+
+function showTestimonials(n) {
+  var posts = document.getElementsByClassName("testimonial-container");
+  var imgs = document.getElementsByClassName("img-container");
+  if (n > posts.length) {
+      testimonialIndex = 1
+  }
+  if (n < 1) {
+      testimonialIndex = posts.length
   }
 
-  document.getElementById("case-left").addEventListener("click", function () {
-      plusDivs(1)
+  for (var i = 0; i < posts.length; i++) {
+     posts[i].style.display = "none";
+     imgs[i].style.display = "none";
+  }
+  posts[testimonialIndex-1].style.display = "block";
+  imgs[testimonialIndex-1].style.display = "block";
+}
 
-  });
+document.getElementById("next-testimonials").addEventListener("click", function () {
+    plusTestimonials(1)
+});
 
+document.getElementById("prev-testimonials").addEventListener("click", function () {
+    minusTestimonials(1)
 });

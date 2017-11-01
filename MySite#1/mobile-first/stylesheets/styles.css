@@ -695,14 +695,14 @@ a.see-more:visited {
 }
 
 /* line 113, ../sass/partials/_base.sass */
-.casePostsFade {
+.fade {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
