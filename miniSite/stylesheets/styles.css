@@ -476,7 +476,7 @@ template {
 }
 
 /* line 1, ../sass/partials/_base.sass */
-html {
+* {
   margin: 0;
   padding: 0;
 }
@@ -489,7 +489,7 @@ html {
 }
 
 /* line 9, ../sass/partials/_base.sass */
-.logo {
+#logo {
   margin-left: 100px;
 }
 
@@ -510,51 +510,70 @@ nav ul {
 /* line 21, ../sass/partials/_base.sass */
 nav ul li {
   line-height: 100px;
+  float: left;
 }
 
 /* line 24, ../sass/partials/_base.sass */
+#burger-menu {
+  display: none;
+  color: #FFF !important;
+  font-size: 2rem;
+  float: right;
+  position: relative;
+  top: -70px;
+  right: 100px;
+  cursor: pointer;
+}
+
+/* line 34, ../sass/partials/_base.sass */
 .box {
   background: #333;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-/* line 29, ../sass/partials/_base.sass */
+/* line 39, ../sass/partials/_base.sass */
 .xlg-box {
   background: #333;
   width: 1200px;
   height: 500px;
-  margin: 50px auto;
+  margin: 50px 0;
 }
 
-/* line 35, ../sass/partials/_base.sass */
+/* line 45, ../sass/partials/_base.sass */
 .lg-box {
   width: 550px;
   height: 500px;
   float: left;
 }
 
-/* line 40, ../sass/partials/_base.sass */
+/* line 50, ../sass/partials/_base.sass */
 .md-box {
   width: 330px;
   height: 300px;
   float: left;
 }
 
-/* line 45, ../sass/partials/_base.sass */
+/* line 55, ../sass/partials/_base.sass */
 .sm-box {
   width: 225px;
   height: 250px;
   float: left;
 }
 
-/* line 50, ../sass/partials/_base.sass */
+/* line 60, ../sass/partials/_base.sass */
+header {
+  margin: 50px auto;
+  width: 1200px;
+}
+
+/* line 64, ../sass/partials/_base.sass */
 section {
   margin: 50px auto;
   width: 1300px;
 }
 
-/* line 54, ../sass/partials/_base.sass */
+/* line 68, ../sass/partials/_base.sass */
 footer {
   background: #555;
   height: 100px;
@@ -563,80 +582,90 @@ footer {
 
 @media only screen and (max-width: 1280px) {
   /* line 2, ../sass/partials/media_queries.sass */
+  header {
+    margin: 40px auto;
+    width: 1000px;
+  }
+
+  /* line 5, ../sass/partials/media_queries.sass */
   section {
     margin: 40px auto;
     width: 1060px;
   }
 
-  /* line 6, ../sass/partials/media_queries.sass */
+  /* line 9, ../sass/partials/media_queries.sass */
   .box {
     background: #252836;
     margin: 0 20px;
   }
 
-  /* line 10, ../sass/partials/media_queries.sass */
+  /* line 13, ../sass/partials/media_queries.sass */
   .xlg-box {
     background: #252836;
     width: 1000px;
     height: 500px;
   }
 
-  /* line 15, ../sass/partials/media_queries.sass */
+  /* line 18, ../sass/partials/media_queries.sass */
   .lg-box {
     width: 485px;
     height: 500px;
   }
 
-  /* line 19, ../sass/partials/media_queries.sass */
+  /* line 22, ../sass/partials/media_queries.sass */
   .md-box {
     width: 305px;
     height: 300px;
   }
 
-  /* line 23, ../sass/partials/media_queries.sass */
+  /* line 26, ../sass/partials/media_queries.sass */
   .sm-box {
     width: 220px;
     height: 250px;
   }
 
-  /* line 27, ../sass/partials/media_queries.sass */
+  /* line 30, ../sass/partials/media_queries.sass */
   nav, footer {
     background: #181a25;
   }
 }
 @media only screen and (max-width: 1160px) {
-  /* line 31, ../sass/partials/media_queries.sass */
-  section {
-    margin: 40px auto;
+  /* line 34, ../sass/partials/media_queries.sass */
+  header {
     width: 800px;
   }
 
-  /* line 35, ../sass/partials/media_queries.sass */
+  /* line 36, ../sass/partials/media_queries.sass */
+  section {
+    width: 800px;
+  }
+
+  /* line 39, ../sass/partials/media_queries.sass */
   .box {
     background: #253630;
     margin: 0 20px;
   }
 
-  /* line 39, ../sass/partials/media_queries.sass */
+  /* line 43, ../sass/partials/media_queries.sass */
   .xlg-box {
     background: #253630;
     width: 800px;
     height: 500px;
   }
 
-  /* line 44, ../sass/partials/media_queries.sass */
+  /* line 48, ../sass/partials/media_queries.sass */
   .lg-box {
     width: 360px;
     height: 500px;
   }
 
-  /* line 48, ../sass/partials/media_queries.sass */
+  /* line 52, ../sass/partials/media_queries.sass */
   .md-box {
     width: 225px;
     height: 300px;
   }
 
-  /* line 52, ../sass/partials/media_queries.sass */
+  /* line 56, ../sass/partials/media_queries.sass */
   .sm-box {
     width: 800px;
     height: 200px;
@@ -644,38 +673,47 @@ footer {
     margin-bottom: 20px !important;
   }
 
-  /* line 58, ../sass/partials/media_queries.sass */
+  /* line 62, ../sass/partials/media_queries.sass */
   nav, footer {
     background: #18251c;
   }
+
+  /* line 65, ../sass/partials/media_queries.sass */
+  #burger-menu {
+    display: block;
+  }
 }
 @media only screen and (max-width: 800px) {
-  /* line 62, ../sass/partials/media_queries.sass */
+  /* line 69, ../sass/partials/media_queries.sass */
+  header {
+    width: 550px;
+  }
+
+  /* line 72, ../sass/partials/media_queries.sass */
   section {
-    margin: 40px auto;
     width: 600px;
   }
 
-  /* line 66, ../sass/partials/media_queries.sass */
+  /* line 75, ../sass/partials/media_queries.sass */
   .box {
     background: #362532;
     margin: 0 20px;
   }
 
-  /* line 70, ../sass/partials/media_queries.sass */
+  /* line 79, ../sass/partials/media_queries.sass */
   .xlg-box {
     background: #362532;
     width: 550px;
     height: 500px;
   }
 
-  /* line 75, ../sass/partials/media_queries.sass */
+  /* line 84, ../sass/partials/media_queries.sass */
   .lg-box {
     width: 250px;
     height: 500px;
   }
 
-  /* line 79, ../sass/partials/media_queries.sass */
+  /* line 88, ../sass/partials/media_queries.sass */
   .md-box {
     width: 550px;
     height: 300px;
@@ -683,38 +721,53 @@ footer {
     margin-bottom: 20px !important;
   }
 
-  /* line 85, ../sass/partials/media_queries.sass */
+  /* line 94, ../sass/partials/media_queries.sass */
   .sm-box {
     width: 550px;
     height: 200px;
   }
 
-  /* line 89, ../sass/partials/media_queries.sass */
+  /* line 98, ../sass/partials/media_queries.sass */
   nav, footer {
     background: #251824;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 93, ../sass/partials/media_queries.sass */
-  section {
-    margin: 40px auto;
+  /* line 102, ../sass/partials/media_queries.sass */
+  header {
     width: 400px;
   }
 
-  /* line 97, ../sass/partials/media_queries.sass */
-  .box {
-    background: #362525;
-    margin: 0 20px;
+  /* line 105, ../sass/partials/media_queries.sass */
+  section {
+    width: 400px;
   }
 
-  /* line 101, ../sass/partials/media_queries.sass */
+  /* line 108, ../sass/partials/media_queries.sass */
+  .box {
+    background: #362525;
+    margin: 0px;
+  }
+
+  /* line 112, ../sass/partials/media_queries.sass */
   .xlg-box {
     background: #362525;
     width: 450px;
     height: 400px;
   }
 
-  /* line 106, ../sass/partials/media_queries.sass */
+  /* line 117, ../sass/partials/media_queries.sass */
+  #logo {
+    margin-left: 10px;
+  }
+
+  /* line 120, ../sass/partials/media_queries.sass */
+  #burger-menu {
+    position: relative;
+    right: 50px !important;
+  }
+
+  /* line 125, ../sass/partials/media_queries.sass */
   .lg-box {
     width: 450px;
     height: 500px;
@@ -722,20 +775,68 @@ footer {
     margin-bottom: 20px !important;
   }
 
-  /* line 112, ../sass/partials/media_queries.sass */
+  /* line 131, ../sass/partials/media_queries.sass */
   .md-box {
     width: 450px;
     height: 250px;
   }
 
-  /* line 116, ../sass/partials/media_queries.sass */
+  /* line 135, ../sass/partials/media_queries.sass */
   .sm-box {
     width: 450px;
     height: 200px;
   }
 
-  /* line 120, ../sass/partials/media_queries.sass */
+  /* line 139, ../sass/partials/media_queries.sass */
   nav, footer {
     background: #251818;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* line 144, ../sass/partials/media_queries.sass */
+  header {
+    width: 350px;
+  }
+
+  /* line 147, ../sass/partials/media_queries.sass */
+  section {
+    width: 350px;
+  }
+
+  /* line 150, ../sass/partials/media_queries.sass */
+  .box {
+    background: #323625;
+  }
+
+  /* line 153, ../sass/partials/media_queries.sass */
+  .xlg-box {
+    background: #323625;
+    width: 350px;
+    height: 300px;
+  }
+
+  /* line 159, ../sass/partials/media_queries.sass */
+  .lg-box {
+    width: 350px;
+    height: 300px;
+    display: block;
+    margin-bottom: 20px !important;
+  }
+
+  /* line 165, ../sass/partials/media_queries.sass */
+  .md-box {
+    width: 350px;
+    height: 250px;
+  }
+
+  /* line 169, ../sass/partials/media_queries.sass */
+  .sm-box {
+    width: 350px;
+    height: 200px;
+  }
+
+  /* line 173, ../sass/partials/media_queries.sass */
+  nav, footer {
+    background: #232518;
   }
 }
