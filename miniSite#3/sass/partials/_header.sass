@@ -1,0 +1,71 @@
+header
+    background-color: $green
+    width: 300px
+    position: fixed
+    left: 0
+    bottom: 0
+    top: 0
+    overflow: auto
+    z-index: 99
+    color: #FFF
+
+    & h1
+        font-family: 'Share', cursive
+        margin-top: 30px
+        text-align: center
+        font-size: 3em
+        background: $biegeGreen
+
+nav ul
+    list-style: none
+    margin-top: 50px
+    & li
+        text-align: center
+        width: 100%
+        background: $green
+        border-top: 1px solid $biegeGreen
+        height: 50px
+        line-height: 50px
+        text-transform: uppercase
+        font-weight: 600
+        letter-spacing: 1.5px
+        cursor: pointer
+        transition: .2s linear all
+        &.last-nav-item
+            border-bottom: 1px solid $biegeGreen
+        &:hover
+            background: darken( $green, 20%)
+            transition: .3s linear all
+        &.active
+            background: lighten($green, 10%)
+            &:hover
+                background: darken($green, 10%)
+
+div.social-link-container
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    & a
+        text-decoration: none
+        color: #FFF
+        & div
+            display: inline-block
+        & .twitter-link,  .github-link
+            width: 50%
+            height: 50px
+            line-height: 50px
+            text-align: center
+            float: left
+            cursor: pointer
+            &:active
+                position: relative
+                top: 1px
+        & .twitter-link
+            background: #1DA1F2
+            &:hover
+                background: lighten(#1DA1F2, 10%)
+        & .github-link
+            background: #171516
+            &:hover
+                background: lighten(#171516, 10%)
