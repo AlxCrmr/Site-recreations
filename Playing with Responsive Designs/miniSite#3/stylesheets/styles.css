@@ -483,7 +483,7 @@ template {
 }
 
 /* line 6, ../sass/partials/_base.sass */
-html, body, .wrapper {
+html body {
   max-width: 100%;
   width: 1920px;
   height: 100%;
@@ -491,28 +491,34 @@ html, body, .wrapper {
 }
 
 /* line 12, ../sass/partials/_base.sass */
+.wrapper {
+  width: 90%;
+}
+
+/* line 15, ../sass/partials/_base.sass */
 body {
   font-size: 16px;
   font-family: sans-serif;
 }
 
-/* line 16, ../sass/partials/_base.sass */
+/* line 19, ../sass/partials/_base.sass */
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 21, ../sass/partials/_base.sass */
+/* line 24, ../sass/partials/_base.sass */
 .container {
   max-width: 100%;
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 26, ../sass/partials/_base.sass */
+/* line 29, ../sass/partials/_base.sass */
 .menu {
   display: none;
+  cursor: pointer;
 }
 
 /* line 1, ../sass/partials/_header.sass */
@@ -648,8 +654,9 @@ section#content #first-section, section#content #second-section, section#content
   color: #333;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
-/* line 26, ../sass/partials/_sections.sass */
+/* line 27, ../sass/partials/_sections.sass */
 section#content h2 {
   font-size: 1.5em;
   text-transform: uppercase;
@@ -659,24 +666,24 @@ section#content h2 {
   padding-left: 20px;
   background: #FE4365;
 }
-/* line 34, ../sass/partials/_sections.sass */
+/* line 35, ../sass/partials/_sections.sass */
 section#content p {
   margin-bottom: 10px;
 }
-/* line 37, ../sass/partials/_sections.sass */
+/* line 38, ../sass/partials/_sections.sass */
 section#content #first-section .section-text {
   width: 45%;
   float: left;
   margin-bottom: 10px;
 }
-/* line 42, ../sass/partials/_sections.sass */
+/* line 43, ../sass/partials/_sections.sass */
 section#content #first-section img.first-section-img {
   max-width: 45%;
   width: 300px;
   height: auto;
   margin-left: 3%;
 }
-/* line 49, ../sass/partials/_sections.sass */
+/* line 50, ../sass/partials/_sections.sass */
 section#content #second-section .section-text {
   width: 45%;
   padding: auto 10px;
@@ -684,24 +691,24 @@ section#content #second-section .section-text {
   margin-left: 3%;
   margin-bottom: 10px;
 }
-/* line 56, ../sass/partials/_sections.sass */
+/* line 57, ../sass/partials/_sections.sass */
 section#content #second-section img.second-section-img {
   max-width: 45%;
   width: 300px;
   height: auto;
   float: left;
 }
-/* line 62, ../sass/partials/_sections.sass */
+/* line 63, ../sass/partials/_sections.sass */
 section#content #third-section {
   padding-bottom: 50px;
 }
-/* line 64, ../sass/partials/_sections.sass */
+/* line 65, ../sass/partials/_sections.sass */
 section#content #third-section .section-text {
   max-width: 100%;
   width: 750px;
   margin: 0 auto;
 }
-/* line 68, ../sass/partials/_sections.sass */
+/* line 69, ../sass/partials/_sections.sass */
 section#content #third-section img.third-section-img {
   max-width: 100%;
   width: 700px;
@@ -717,124 +724,508 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-height: 440px) {
+@media only screen and (max-height: 500px) and (max-width: 1390px) {
   /* line 2, ../sass/partials/media_queries.sass */
+  .wrapper {
+    max-width: 100%;
+    width: 1390px !important;
+  }
+
+  /* line 5, ../sass/partials/media_queries.sass */
+  .container {
+    width: 100%;
+  }
+
+  /* line 7, ../sass/partials/media_queries.sass */
+  section#content {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /* line 10, ../sass/partials/media_queries.sass */
   div.social-link-container {
     display: none;
   }
 
-  /* line 4, ../sass/partials/media_queries.sass */
+  /* line 12, ../sass/partials/media_queries.sass */
   .menu {
     display: block;
   }
-}
-@media only screen and (max-width: 1390px) {
-  /* line 8, ../sass/partials/media_queries.sass */
-  section#content {
-    margin-left: 200px;
+
+  /* line 14, ../sass/partials/media_queries.sass */
+  header {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  /* line 21, ../sass/partials/media_queries.sass */
+  header h1 {
+    margin-top: 0px;
+    text-align: none;
+    font-size: 2em;
+    display: inline-block;
+    padding: 10px;
+    line-height: 30px;
+    margin: 10px 20px;
   }
 
-  /* line 10, ../sass/partials/media_queries.sass */
+  /* line 29, ../sass/partials/media_queries.sass */
+  nav ul {
+    display: none;
+  }
+
+  /* line 31, ../sass/partials/media_queries.sass */
+  .menu {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 3;
+    float: right;
+    top: -60px;
+    left: -50px;
+  }
+  /* line 39, ../sass/partials/media_queries.sass */
+  .menu:hover {
+    color: #FE4365;
+  }
+
+  /* line 42, ../sass/partials/media_queries.sass */
+  div.social-link-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1390px) {
+  /* line 46, ../sass/partials/media_queries.sass */
+  .wrapper {
+    width: 80%;
+  }
+
+  /* line 48, ../sass/partials/media_queries.sass */
   #first-section, #second-section, #third-section {
     max-width: 100%;
-    width: 800px;
+    width: 800px !important;
   }
 }
 @media only screen and (max-width: 1214px) {
-  /* line 15, ../sass/partials/media_queries.sass */
+  /* line 53, ../sass/partials/media_queries.sass */
   .container {
     width: 700px;
   }
 
-  /* line 17, ../sass/partials/media_queries.sass */
-  section#content {
-    margin-left: 200px;
-  }
-
-  /* line 19, ../sass/partials/media_queries.sass */
+  /* line 56, ../sass/partials/media_queries.sass */
   #first-section, #second-section, #third-section {
     width: 700px;
   }
 
-  /* line 22, ../sass/partials/media_queries.sass */
+  /* line 59, ../sass/partials/media_queries.sass */
   #first-section div.section-text, #second-section div.section-text {
     width: 15%;
   }
 
-  /* line 25, ../sass/partials/media_queries.sass */
+  /* line 62, ../sass/partials/media_queries.sass */
   #third-section div.section-text {
     width: 700px !important;
   }
-  /* line 27, ../sass/partials/media_queries.sass */
+  /* line 64, ../sass/partials/media_queries.sass */
   #third-section img.third-section-img {
     width: 550px !important;
     margin: 0 10% 10px !important;
   }
 }
 @media only screen and (max-width: 1084px) {
-  /* line 32, ../sass/partials/media_queries.sass */
-  section#content {
-    margin-left: 100px !important;
-  }
-
-  /* line 34, ../sass/partials/media_queries.sass */
+  /* line 69, ../sass/partials/media_queries.sass */
   section div.section-text {
     display: block;
     clear: both;
   }
 
-  /* line 37, ../sass/partials/media_queries.sass */
+  /* line 72, ../sass/partials/media_queries.sass */
   section img {
     display: block;
     clear: both;
   }
 
-  /* line 41, ../sass/partials/media_queries.sass */
+  /* line 76, ../sass/partials/media_queries.sass */
   .container {
     width: 600px;
   }
 
-  /* line 43, ../sass/partials/media_queries.sass */
-  section#content {
-    margin-left: 200px;
-  }
-
-  /* line 45, ../sass/partials/media_queries.sass */
+  /* line 78, ../sass/partials/media_queries.sass */
   #first-section, #second-section, #third-section {
     width: 600px;
   }
 
-  /* line 48, ../sass/partials/media_queries.sass */
+  /* line 81, ../sass/partials/media_queries.sass */
   #first-section div.section-text, #second-section div.section-text {
     width: 500px !important;
     margin-left: 10%;
   }
-  /* line 51, ../sass/partials/media_queries.sass */
+  /* line 84, ../sass/partials/media_queries.sass */
   #first-section img, #second-section img {
     max-width: 100% !important;
     width: 350px !important;
     height: auto !important;
     margin: 0 auto !important;
   }
-  /* line 56, ../sass/partials/media_queries.sass */
+  /* line 89, ../sass/partials/media_queries.sass */
   #first-section img.second-section-img, #second-section img.second-section-img {
     margin-left: 15% !important;
+    padding-bottom: 20px;
   }
 
-  /* line 59, ../sass/partials/media_queries.sass */
+  /* line 93, ../sass/partials/media_queries.sass */
   #third-section div.section-text {
-    width: 600px !important;
+    width: 550px !important;
     padding: 0 20px !important;
   }
-  /* line 62, ../sass/partials/media_queries.sass */
+  /* line 96, ../sass/partials/media_queries.sass */
   #third-section img.third-section-img {
     width: 550px !important;
     margin: 0 5% 10px !important;
   }
 }
-@media only screen and (max-width: 1036px) {
-  /* line 67, ../sass/partials/media_queries.sass */
+@media only screen and (max-width: 1000px) {
+  /* line 101, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 2em !important;
+    padding-right: 30px !important;
+  }
+
+  /* line 104, ../sass/partials/media_queries.sass */
+  .wrapper {
+    width: 80%;
+  }
+
+  /* line 106, ../sass/partials/media_queries.sass */
+  .container {
+    width: 500px;
+  }
+
+  /* line 108, ../sass/partials/media_queries.sass */
+  #first-section, #second-section, #third-section {
+    width: 500px;
+  }
+
+  /* line 111, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text {
+    width: 500px !important;
+    margin-left: 10%;
+    padding-right: 100px;
+  }
+  /* line 115, ../sass/partials/media_queries.sass */
+  #first-section img, #second-section img {
+    max-width: 100% !important;
+    width: 250px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  /* line 120, ../sass/partials/media_queries.sass */
+  #first-section img.second-section-img, #second-section img.second-section-img {
+    margin-left: 15% !important;
+    padding-bottom: 20px;
+  }
+
+  /* line 124, ../sass/partials/media_queries.sass */
+  #third-section div.section-text {
+    width: 450px !important;
+    padding: 0 20px !important;
+  }
+  /* line 127, ../sass/partials/media_queries.sass */
+  #third-section img.third-section-img {
+    width: 450px !important;
+    margin: 0 1% 10px !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 132, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 2em !important;
+    padding-right: 120px !important;
+  }
+
+  /* line 135, ../sass/partials/media_queries.sass */
+  .wrapper {
+    width: 80%;
+  }
+
+  /* line 137, ../sass/partials/media_queries.sass */
+  .container {
+    width: 500px;
+  }
+
+  /* line 139, ../sass/partials/media_queries.sass */
+  #first-section, #second-section, #third-section {
+    width: 500px;
+    padding-right: 150px !important;
+  }
+
+  /* line 143, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text {
+    width: 500px !important;
+    margin-left: 10%;
+    padding-right: 100px;
+  }
+  /* line 147, ../sass/partials/media_queries.sass */
+  #first-section img, #second-section img {
+    max-width: 100% !important;
+    width: 250px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  /* line 152, ../sass/partials/media_queries.sass */
+  #first-section img.second-section-img, #second-section img.second-section-img {
+    margin-left: 15% !important;
+    padding-bottom: 20px;
+  }
+
+  /* line 156, ../sass/partials/media_queries.sass */
+  #third-section div.section-text {
+    width: 450px !important;
+    padding: 0 20px !important;
+  }
+  /* line 159, ../sass/partials/media_queries.sass */
+  #third-section img.third-section-img {
+    width: 450px !important;
+    margin: 0 1% 10px !important;
+  }
+}
+@media only screen and (max-width: 805px) {
+  /* line 164, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 1.5rem !important;
+  }
+
+  /* line 166, ../sass/partials/media_queries.sass */
+  footer p {
+    padding-right: 100px !important;
+  }
+}
+@media only screen and (max-width: 790px) {
+  /* line 170, ../sass/partials/media_queries.sass */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* line 172, ../sass/partials/media_queries.sass */
+  .container {
+    width: 100%;
+  }
+
+  /* line 174, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 2.5em !important;
+    padding-right: 0px !important;
+  }
+
+  /* line 177, ../sass/partials/media_queries.sass */
   section#content {
-    margin-left: 150px !important;
+    margin-left: 0px;
+  }
+
+  /* line 179, ../sass/partials/media_queries.sass */
+  header {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  /* line 186, ../sass/partials/media_queries.sass */
+  header h1 {
+    margin-top: 0px;
+    text-align: none;
+    font-size: 2em;
+    display: inline-block;
+    padding: 10px;
+    line-height: 30px;
+    margin: 10px 20px;
+  }
+
+  /* line 194, ../sass/partials/media_queries.sass */
+  nav ul {
+    display: none;
+  }
+
+  /* line 196, ../sass/partials/media_queries.sass */
+  .menu {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 3;
+    float: right;
+    top: -60px;
+    left: -50px;
+  }
+  /* line 204, ../sass/partials/media_queries.sass */
+  .menu:hover {
+    color: #FE4365;
+  }
+
+  /* line 207, ../sass/partials/media_queries.sass */
+  div.social-link-container {
+    display: none;
+  }
+
+  /* line 209, ../sass/partials/media_queries.sass */
+  #first-section, #second-section, #third-section {
+    width: 700px;
+    padding-right: 50 !important;
+    margin-left: 50px !important;
+  }
+  /* line 213, ../sass/partials/media_queries.sass */
+  #first-section h2, #second-section h2, #third-section h2 {
+    max-width: 100% !important;
+    width: 600px !important;
+  }
+
+  /* line 218, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text {
+    width: 700px !important;
+    padding-right: 200px !important;
+  }
+  /* line 221, ../sass/partials/media_queries.sass */
+  #first-section img, #second-section img {
+    max-width: 100% !important;
+    width: 300px !important;
+  }
+
+  /* line 225, ../sass/partials/media_queries.sass */
+  #third-section div.section-text {
+    width: 700px !important;
+    padding: 0 50px !important;
+  }
+  /* line 228, ../sass/partials/media_queries.sass */
+  #third-section img.third-section-img {
+    width: 600px !important;
+  }
+}
+@media only screen and (max-width: 716px) {
+  /* line 233, ../sass/partials/media_queries.sass */
+  #third-section img.third-section-img {
+    width: 400px !important;
+  }
+
+  /* line 235, ../sass/partials/media_queries.sass */
+  footer p {
+    padding-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 239, ../sass/partials/media_queries.sass */
+  #first-section, #second-section, #third-section {
+    padding-right: 0 !important;
+  }
+  /* line 241, ../sass/partials/media_queries.sass */
+  #first-section h2, #second-section h2, #third-section h2 {
+    max-width: 100% !important;
+    width: 500px !important;
+  }
+  /* line 244, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text, #third-section div.section-text {
+    max-width: 100% !important;
+    width: 450px !important;
+    margin-left: 0%;
+  }
+
+  /* line 249, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text {
+    padding-right: 0px !important;
+  }
+
+  /* line 251, ../sass/partials/media_queries.sass */
+  #third-section {
+    position: relative;
+  }
+  /* line 253, ../sass/partials/media_queries.sass */
+  #third-section div.section-text {
+    padding: 0 0 0 2% !important;
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 257, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 1.8rem !important;
+  }
+
+  /* line 261, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text, #third-section div.section-text {
+    padding-right: 30px !important;
+    margin-left: 1.5% !important;
+  }
+}
+@media only screen and (max-width: 510px) {
+  /* line 267, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text, #third-section div.section-text {
+    padding-right: 80px !important;
+  }
+}
+@media only screen and (max-width: 473px) {
+  /* line 272, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text, #third-section div.section-text {
+    padding-right: 120px !important;
+  }
+  /* line 274, ../sass/partials/media_queries.sass */
+  #first-section img, #second-section img, #third-section img {
+    width: 300px !important;
+    padding-right: 20% !important;
+  }
+}
+@media only screen and (max-width: 473px) {
+  /* line 279, ../sass/partials/media_queries.sass */
+  #first-section, #second-section, #third-section {
+    margin-left: 0 !important;
+  }
+  /* line 281, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #second-section div.section-text, #third-section div.section-text {
+    width: 500px !important;
+    padding-left: 20px !important;
+  }
+
+  /* line 284, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 1.5rem !important;
+  }
+
+  /* line 287, ../sass/partials/media_queries.sass */
+  #first-section div.section-text, #third-section div.section-text {
+    padding-right: 50px !important;
+  }
+
+  /* line 290, ../sass/partials/media_queries.sass */
+  #second-section div.section-text {
+    padding-right: 200px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 294, ../sass/partials/media_queries.sass */
+  span.menu {
+    font-size: 1.3rem !important;
+    position: relative;
+    left: -25px !important;
+  }
+
+  /* line 298, ../sass/partials/media_queries.sass */
+  .banner {
+    font-size: 1.3rem !important;
+  }
+
+  /* line 300, ../sass/partials/media_queries.sass */
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  /* line 303, ../sass/partials/media_queries.sass */
+  #second-section div.section-text {
+    padding-right: 230px !important;
+  }
+
+  /* line 305, ../sass/partials/media_queries.sass */
+  footer p {
+    font-size: 0.9rem;
   }
 }
