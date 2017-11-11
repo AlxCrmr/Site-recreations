@@ -1,7 +1,7 @@
-@media only screen and (max-height:500px) and (max-width:1390px)
+@media only screen and (max-height:500px)
     .wrapper
         max-width: 100%
-        width: 1390px !important
+        width: 1980px !important
     .container
         width: 100%
     section#content
@@ -9,7 +9,7 @@
         margin-left: 0px
     div.social-link-container
         display: none
-    .menu
+    #menu
         display: block
     header
         width: 100%
@@ -26,9 +26,53 @@
             padding: 10px
             line-height: 30px
             margin: 10px 20px
-    nav ul
+    nav#side-nav ul
         display: none
-    .menu
+    #menu
+        display: block
+        position: relative
+        font-size: 1.5rem
+        z-index: 3
+        float: right
+        top: -60px
+        left: -50px
+        &:hover
+            color: $pink
+
+    div.social-link-container
+        display: none
+
+@media only screen and (max-height:500px) and (max-width:1390px)
+    .wrapper
+        max-width: 100%
+        width: 1390px !important
+    .container
+        width: 100%
+    section#content
+        width: 100%
+        margin-left: 0px
+    div.social-link-container
+        display: none
+    #menu
+        display: block
+    header
+        width: 100%
+        position: relative
+        height: 100px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        & h1
+            margin-top: 0px
+            text-align: none
+            font-size: 2em
+            display: inline-block
+            padding: 10px
+            line-height: 30px
+            margin: 10px 20px
+    nav#side-nav ul
+        display: none
+    #menu
         display: block
         position: relative
         font-size: 1.5rem
@@ -191,9 +235,9 @@
             padding: 10px
             line-height: 30px
             margin: 10px 20px
-    nav ul
+    nav#side-nav ul
         display: none
-    .menu
+    #menu
         display: block
         position: relative
         font-size: 1.5rem
@@ -291,7 +335,7 @@
             padding-right: 200px !important
 
 @media only screen and (max-width:360px)
-    span.menu
+    span#menu
         font-size: 1.3rem!important
         position: relative
         left: -25px!important

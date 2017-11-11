@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$pink".
-        on line 40 of C:/Users/Alex/Desktop/Work/Websites/miniSite#3/sass/partials/media_queries.sass
+        on line 40 of C:/Users/Alex/Desktop/Work/Websites/Playing with Responsive Designs/miniSite#3/sass/partials/media_queries.sass
 
 35:         z-index: 3
 36:         float: right
@@ -12,10 +12,10 @@ Error: Undefined variable: "$pink".
 42:     div.social-link-container
 43:         display: none
 44: 
-45: @media only screen and (max-width:1390px)
+45: @media only screen and (max-height:500px) and (max-width:1390px)
 
 Backtrace:
-C:/Users/Alex/Desktop/Work/Websites/miniSite#3/sass/partials/media_queries.sass:40
+C:/Users/Alex/Desktop/Work/Websites/Playing with Responsive Designs/miniSite#3/sass/partials/media_queries.sass:40
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -94,4 +94,4 @@ C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$pink\".\A         on line 40 of C:/Users/Alex/Desktop/Work/Websites/miniSite#3/sass/partials/media_queries.sass\A \A 35:         z-index: 3\A 36:         float: right\A 37:         top: -60px\A 38:         left: -50px\A 39:         &:hover\A 40:             color: $pink\A 41: \A 42:     div.social-link-container\A 43:         display: none\A 44: \A 45: @media only screen and (max-width:1390px)"; }
+  content: "Error: Undefined variable: \"$pink\".\A         on line 40 of C:/Users/Alex/Desktop/Work/Websites/Playing with Responsive Designs/miniSite#3/sass/partials/media_queries.sass\A \A 35:         z-index: 3\A 36:         float: right\A 37:         top: -60px\A 38:         left: -50px\A 39:         &:hover\A 40:             color: $pink\A 41: \A 42:     div.social-link-container\A 43:         display: none\A 44: \A 45: @media only screen and (max-height:500px) and (max-width:1390px)"; }
