@@ -1,0 +1,321 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    max-width: 100%;
+    width: 1980px;
+}
+section, footer {
+    max-width: 100%;
+    width: 1980px;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ===== NAV ===== */
+nav {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    display: inline-block;
+    line-height: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.artist-name {
+    letter-spacing: -3px;
+}
+.logo {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+.hamburger-menu {
+    display: none;
+    float: right;
+    position: relative;
+    top: -60px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+.hamburger-menu:hover {
+    color: #777;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+}
+nav ul li {
+    float: left;
+    font-weight: 600;
+    border-right: 1.5px solid #cdcdcd;
+    padding: 0 20px;
+}
+.last-nav-item {
+    border:none;
+}
+nav ul li:hover {
+    color: #777;
+}
+
+/* ===== SECTION 1 ===== */
+section#first-section {
+    margin: 0 auto;
+}
+.main-img {
+    width: 93%;
+    margin: 0px 2%;
+}
+
+/* ===== SECTION 2 ===== */
+section#second-section {
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+}
+.half-image {
+    max-width: 45%;
+    width: 891px;
+    padding: 2.5% 0;
+    display: inline-block;
+}
+.image-left {
+    padding-right: 2.4%;
+    margin-left: 2.4%;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    max-width: 100%;
+    width: 1980px;
+    height: 30px;
+    border-top: 1px solid #cdcdcd;
+    margin-top: 10px;
+    padding: 2.5% 0;
+    overflow-y: hidden;
+}
+
+footer .copyright {
+    float: right;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media only screen and (max-width: 1024px) {
+    html, body {
+        max-width: 100%;
+        width: 1024px;
+    }
+    section, footer {
+        max-width: 100%;
+        width: 1024px;
+    }
+    section {
+        margin-bottom: 3%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin-bottom: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: none;
+    }
+
+    #logo {
+        line-height: 20px;
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+    .artist-name {
+        letter-spacing: -3px;
+    }
+    .logo {
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+    }
+    .hamburger-menu {
+        display: block;
+        position: relative;
+        top: -50px;
+        margin-right: 80px;
+    }
+    nav ul {
+        display: none
+    }
+
+    /* ===== SECTION 1 ===== */
+    .main-img {
+        max-width: 90%;
+        width: 921.594px;
+        height: auto;
+        margin: 0;
+        padding: 2.5%;
+        display: block;
+    }
+    /* ===== SECTION 2 ===== */
+    .container {
+        width: 90%;
+    }
+    .half-image {
+        max-width: 100%;
+        width: 921.594px;
+        height: auto;
+        padding: 2.5%;
+        display: block;
+    }
+    .image-left {
+        padding-right: 0%;
+        margin-left: 0%;
+    }
+    /* ===== FOOTER ===== */
+    footer {
+        max-width: 90%;
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    footer .copyright {
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 922px) {
+    html, body {
+        max-width: 100%;
+        width: 922px;
+    }
+    section, footer {
+        max-width: 100%;
+        width: 922px;
+    }
+
+    /* ===== SECTION 1 ===== */
+    .main-img {
+        max-width: 90%;
+        width: 857.453px;
+        height: auto;
+    }
+    /* ===== SECTION 2 ===== */
+    .half-image {
+        max-width: 100%;
+        width: 857.453px;
+        height: auto;
+    }
+    /* ===== FOOTER ===== */
+    footer {
+        max-width: 90%;
+        width: 922px;
+    }
+}
+@media only screen and (max-width: 590px) {
+    #logo {
+        width: 300px;
+    }
+    .logo {
+        font-size: 1.2rem;
+        letter-spacing: -1px;
+    }
+    .hamburger-menu {
+        position: relative;
+        top: -50px;
+        margin-right: 30px;
+    }
+    footer {
+        max-width: 100%;
+        width: 590px;
+        height: 60px;
+        padding: 20px 0;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    footer .copyright {
+        float: none;
+        display: block;
+    }
+}
+@media only screen and (max-width: 320px) {
+    html, body {
+        max-width: 100%;
+        width: 320px;
+    }
+    section, footer {
+        max-width: 100%;
+        width: 320px;
+    }
+    section {
+        margin-bottom: 3%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin-bottom: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: none;
+    }
+
+    #logo {
+        line-height: 20px;
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+    .artist-name {
+        letter-spacing: -3px;
+    }
+    .logo {
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+    }
+    .hamburger-menu {
+        position: relative;
+        top: -60px;
+        margin-right: 20px;
+    }
+    nav ul {
+        display: none
+    }
+
+    /* ===== SECTION 2 ===== */
+    .half-image {
+        max-width: 100%;
+        width: 297.594px;
+        height: 134px;
+        padding: 2.5%;
+        display: block;
+    }
+    .image-left {
+        padding-right: 0%;
+        margin-left: 0%;
+    }
+    /* ===== FOOTER ===== */
+    footer {
+        max-width: 100%;
+        width: 320px;
+        font-size: .9rem;
+    }
+}
