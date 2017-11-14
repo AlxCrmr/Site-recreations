@@ -57,6 +57,7 @@ header .img-container img {
     float: left
 }
 .img-container {
+    max-width: 100%;
     width: 1200px;
     height:50px;
     margin: 0 auto;
@@ -68,6 +69,7 @@ header .img-container img {
 
 .img-container img.image1 {
     transform: rotateY(10deg);
+    max-width: 100%;
     width: 500px;
     position: absolute;
     top: 180%;
@@ -76,6 +78,7 @@ header .img-container img {
 }
 .img-container img.image2 {
     transform: rotateY(10deg);
+    max-width: 100%;
     width: 550px;
     position: absolute;
     top: 100%;
@@ -84,6 +87,7 @@ header .img-container img {
 }
 .img-container img.image3 {
     transform: rotateY(-3deg);
+    max-width: 100%;
     width: 700px;
     position: absolute;
     left: 20%;
@@ -92,6 +96,7 @@ header .img-container img {
 }
 .img-container img.image4 {
     transform: rotateY(-10deg);
+    max-width: 100%;
     width: 550px;
     position: absolute;
     top: 100%;
@@ -100,6 +105,7 @@ header .img-container img {
 }
 .img-container img.image5 {
     transform: rotateY(-10deg);
+    max-width: 100%;
     width: 500px;
     position: absolute;
     top: 180%;
@@ -117,4 +123,73 @@ footer {
     bottom: 0;
     left: 0;
     font-size: .9em;
+}
+
+/* ===== MEDIA QUERIES ==== */
+@media only screen and (max-width: 1700px) {
+    .img-container {
+        max-width: 100%;
+        width: 900px;
+        height:50px;
+        position: relative;
+        top: 50px;
+    }
+    .img-container img.image1 {
+        max-width: 100%;
+        width: 300px;
+    }
+    .img-container img.image2 {
+        max-width: 100%;
+        width: 350px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:500px;
+    }
+    .img-container img.image4 {
+        max-width: 100%;
+        width: 350px;
+    }
+    .img-container img.image5 {
+        max-width: 100%;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1193px) {
+    header .container {
+        width: 800px;
+        line-height: 40px;
+        margin: 50px auto;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 600px;
+        height:50px;
+        position: relative;
+        top: 50px;
+        left: -65px;
+    }
+    .img-container img.image1 {
+        max-width: 100%;
+        width: 300px;
+    }
+    .img-container img.image2 {
+        max-width: 100%;
+        width: 350px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:500px;
+    }
+    .img-container img.image4 {
+        max-width: 100%;
+        width: 350px;
+        right: -15%;
+    }
+    .img-container img.image5 {
+        max-width: 100%;
+        width: 300px;
+        right: -30%;
+    }
 }
