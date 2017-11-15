@@ -4,6 +4,7 @@ html, body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     color: #222;
+    position: relative;
 }
 
 header nav {
@@ -38,10 +39,18 @@ nav ul a {
 }
 nav ul li {
     float:left;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 nav a:hover {
     color: #999;
+}
+nav #menu {
+    float: right;
+    position: relative;
+    left: 2%;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
 }
 header .container {
     width: 1000px;
@@ -114,15 +123,16 @@ header .img-container img {
 }
 
 footer {
-    width: 100%;
-    height:40px;
     background: #333;
     color: #FFF;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     font-size: .9em;
+    width:100%;
+    height: 40px;
+    height:auto;
+    overflow:hidden;
+    position: fixed;
+    bottom: 0px;
 }
 
 /* ===== MEDIA QUERIES ==== */
@@ -192,4 +202,209 @@ footer {
         width: 300px;
         right: -30%;
     }
+}
+
+@media only screen and (max-width: 935px) {
+    nav #menu {
+        display: block;
+    }
+    nav ul li {
+        display: none;
+    }
+    h1 {
+        width: 600px;
+        display: block;
+    }
+    header .container {
+        width: 700px;
+    }
+    header .container p.lead {
+        font-size: 1em;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 400px;
+        position: relative;
+        top: 50px;
+        left: -75px;
+    }
+    .img-container img.image1 {
+        max-width: 100%;
+        width: 250px;
+        top: 90%;
+        left: -20%;
+    }
+    .img-container img.image2 {
+        max-width: 100%;
+        width: 300px;
+        top: 40%;
+        left: 0%;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:350px;
+    }
+    .img-container img.image4 {
+        max-width: 100%;
+        width: 300px;
+        top: 45%;
+        right: -35%;
+    }
+    .img-container img.image5 {
+        max-width: 100%;
+        width: 250px;
+        right: -55%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    header .container {
+        width: 500px;
+    }
+    header .container h1{
+        font-size: 1.8em;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 300px;
+        position: relative;
+        top: 50px;
+        left: -45px;
+    }
+    .img-container img.image1 {
+        max-width: 100%;
+        width: 150px;
+        top: 90%;
+        left: -20%;
+    }
+    .img-container img.image2 {
+        max-width: 100%;
+        width: 200px;
+        top: 40%;
+        left: 0%;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:250px;
+    }
+    .img-container img.image4 {
+        max-width: 100%;
+        width: 200px;
+        top: 45%;
+        right: -30%;
+    }
+    .img-container img.image5 {
+        max-width: 100%;
+        width: 150px;
+        right: -50%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    nav #menu {
+        left: 15%;
+    }
+    header .container {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 450px;
+        position: relative;
+        top: -35px;
+        left: -100px;
+        height:200px;
+        margin-bottom: 200px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:450px;
+    }
+
+    .img-container img.image1, .img-container img.image2, .img-container img.image4, .img-container img.image5 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 475px) {
+    nav #logo a{
+        font-size: 1.5em;
+    }
+    nav #menu {
+        left: 20%;
+    }
+    header .container {
+        width: 350px;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 350px;
+        position: relative;
+        top: -80px;
+        left: -75px;
+        margin-bottom: 100px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:350px;
+    }
+}
+@media only screen and (max-width: 407px) {
+    nav #logo a{
+        font-size: 1.2em;
+        position: relative;
+        left: -30px;
+    }
+    nav #menu {
+        left: 20%;
+    }
+    header .container {
+        width: 330px;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 330px;
+        position: relative;
+        top: -80px;
+        margin-bottom: 100px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:330px;
+    }
+}
+@media only screen and (max-width: 367px) {
+    nav #logo a{
+        font-size: 1em;
+    }
+    nav #menu {
+        left: 10%;
+        top: -80px;
+    }
+    header .container {
+        width: 300px;
+        margin: 10px auto;
+    }
+    header .container h1 {
+        font-size: 1.2em;
+    }
+    header .container p.lead {
+        font-size: 1em;
+    }
+    .img-container {
+        max-width: 100%;
+        width: 280px;
+        height:200px;
+        margin-bottom: 80px;
+        position: relative;
+        top: -35px;
+        left: -65px;
+    }
+    .img-container img.image3 {
+        max-width: 100%;
+        width:280px;
+    }
+
 }
