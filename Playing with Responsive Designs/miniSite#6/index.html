@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mini Responsive Site #6</title>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Montserrat:400,600,700" rel="stylesheet">
         <script src="https://use.fontawesome.com/fa4e67e080.js"></script>
         <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
@@ -12,7 +13,7 @@
         <div class="wrapper">
             <header>
                 <nav>
-                    <div id="logo">Logo</div>
+                    <a href="#"><div id="logo">BakersDozen</div></a>
 
                     <div class="hamburger-menu">
                         <div id="menu"><i class="fa fa-bars" aria-hidden="true"></i> MENU</div>
@@ -25,12 +26,14 @@
                             <a href="#"><li>Blog</li></a>
                             <a href="#"><li>Contact</li></a>
                         </ul>
-                        <div class="shopping-cart">
-                            <div class="cart-circle">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <a href="#" class="shopping-cart-link">
+                            <div class="shopping-cart">
+                                <div class="cart-circle">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </div>
+                                View Cart
                             </div>
-                            View Cart
-                        </div>
+                        </a>
                     </div>
                 </nav>
 
@@ -40,7 +43,7 @@
                     </div>
                     <div class="right-hero-image">
                         <img src="images/chocolate-chip.jpg" alt="">
-                        <div class="CTA-image-overlay"> Ooey gooey <strong>Chocolate chip cookies $5</strong>
+                        <div class="CTA-image-overlay"> Ooey gooey Chocolate chip cookies $5
                             <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                         </div>
                         <div class="more-images-btns">
@@ -50,41 +53,68 @@
                 </section>
             </header>
 
-            <section id="blog-preview">
-                <img src="images/bread.jpg" alt="">
-                <p class="blog-preview-text">
-                    Suspendisse eu nulla non purus bibendum venenatis. In hac habitasse platea
-                    dictumst. Vestibulum non lacus eros. Proin condimentum vel leo at rhoncus.
-                    Mauris magna odio, dapibus vel lectus sollicitudin, vestibulum convallis est.
-                    Aenean posuere ante lectus, varius dictum ligula euismod et. Curabitur et eros
-                    id mauris porta scelerisque. Duis et elit at sem varius rutrum sit amet non nisi.
-                </p>
+            <section id="blog-featured">
+                <section id="blog-preview">
+                    <div class="blog-container">
+                        <div class="section-title">
+                            <h2>Blog</h2>
+                            <p class="section-description">Read about whats going on</p>
+                        </div>
+                        <img src="images/bread.jpg" alt="">
+                        <p class="blog-preview-text">
+                            Suspendisse eu nulla non purus bibendum venenatis. In hac habitasse platea
+                            dictumst. Vestibulum non lacus eros. Proin condimentum vel leo at rhoncus.
+                            Mauris magna odio, dapibus vel lectus sollicitudin, vestibulum convallis est.
+                            Aenean posuere ante lectus, varius dictum ligula euismod et. Curabitur et eros
+                            id mauris porta scelerisque. Duis et elit at sem varius rutrum sit amet non nisi.
+                            <a href="#">Read more..</a>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="featured-items">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Featured</h2>
+                            <p class="section-description">From the shop</p>
+                        </div>
+
+                        <div class="shop-row">
+                            <div class="featured-item">
+                                <a href="#"><img src="images/cookie-box.jpg" alt=""></a>
+                                <p class="item-name">Box of Cookies <br>
+                                    <span class="item-price">$25</span></p>
+                            </div>
+
+                            <div class="featured-item">
+                                <a href="#"><img src="images/donuts.jpg" alt=""></a>
+                                <p class="item-name">Dozen Donuts <br>
+                                <span class="item-price">$6</span></p>
+                            </div>
+                        </div>
+
+                        <div class="shop-row">
+                            <div class="featured-item">
+                                <a href="#"><img src="images/mini-cakes.jpg" alt=""></a>
+                                <p class="item-name">Mini Cakes <br>
+                                <span class="item-price">$5</span></p>
+                            </div>
+
+                            <div class="featured-item">
+                                <a href="#"><img src="images/wedding-cake.jpg" alt=""></a>
+                                <p class="item-name">Custom Cakes<br>
+                                    <small class="extra-price-info">Starting at:</small><br>
+                                    <span class="item-price">$100</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </section>
 
-            <section id="featured-items">
-                <div class="container">
-                    <div class="featured-item">
-                        <a href="#"><img src="images/cookie-box.jpg" alt=""></a>
-                        <span class="item-name">Box of cookies</span>
-                        <span class="item-price">$25</span>
-                    </div>
-                    <div class="featured-item">
-                        <a href="#"><img src="images/donuts.jpg" alt=""></a>
-                        <span class="item-name"></span>
-                        <span class="item-price"></span>
-                    </div>
-                    <div class="featured-item">
-                        <a href="#"><img src="images/mini-cakes.jpg" alt=""></a>
-                        <span class="item-name"></span>
-                        <span class="item-price"></span>
-                    </div>
-                    <div class="featured-item">
-                        <a href="#"><img src="images/wedding-cake.jpg" alt=""></a>
-                        <span class="item-name"></span>
-                        <span class="item-price"></span>
-                    </div>
-                </div>
-            </section>
+            <footer>
+                <p>Coded By: Alex Cramer</p>
+            </footer>
         </div>
 
     </body>
