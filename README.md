@@ -12,7 +12,7 @@
 | 7 | [Mini Responsive Design#5](https://github.com/AlxCrmr/Websites/tree/master/Playing%20with%20Responsive%20Designs/miniSite%235) | November 14th, 2017 | [CodePen](https://codepen.io/AlxCrmr/pen/eeWjem) |
 | 8 |[Mini Responsive Design#6](https://github.com/AlxCrmr/Websites/tree/master/Playing%20with%20Responsive%20Designs/miniSite%236) | ------------ | [CodePen](https://codepen.io/AlxCrmr/full/gXGGLJ/) |
 | 9 | [Responsive Bootstraps site #1](https://github.com/AlxCrmr/Websites/tree/master/Playing%20with%20Responsive%20Designs/miniBsSite%231) | November18th, 2017 | N/A |
-| 10 | ------------ | ------------ | ------------ |
+| 10 | [Responsive Bootstraps site #2](https://github.com/AlxCrmr/Websites/tree/master/Playing%20with%20Responsive%20Designs/miniBsSite%232) | ------------ | ------------ |
 | 11 | ------------ | ------------ | ------------ |
 | 12 | ------------ | ------------ | ------------ |
 | 13 | ------------ | ------------ | ------------ |
