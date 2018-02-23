@@ -29,14 +29,13 @@ h2{
 	width:80%;
 	overflow:auto;
 	clear:both;
-	
 }
 
 .main-header img#logo{
 	margin:10px 0;
 	display:block;
 	width:45%;
-	transition: width 2s;	
+	transition: width 2s;
 }
 
 .main-header .main-nav{
@@ -106,7 +105,7 @@ h2{
 
 #sidebar{
 	width:30%;
-	float:left;	
+	float:left;
 	transition: opacity 4s ease-in-out;
 }
 
@@ -139,14 +138,14 @@ footer p{
 @media only screen and (min-width : 768px)  and (max-width : 980px) {
 
 	#container{
-		width:95%;	
+		width:95%;
 	}
-	
+
 	.main-header img#logo{
 		margin:auto;
 		display:block;
-		width:65%;	
-		transition: width 1s; /* animation */		
+		width:65%;
+		transition: width 1s; /* animation */
 	}
 	.main-header .main-nav{
 		height:40px;
@@ -154,7 +153,7 @@ footer p{
 		border:#c13046 1px solid;
 		transition: height 1s; /* animation */
 	}
-	
+
 	#content{
 		overflow:auto;
 		width:100%;
@@ -166,7 +165,7 @@ footer p{
 		width:100%;
 		float:none;
 	}
-	
+
 	#sidebar .block{
 		margin-left:0;
 	}
@@ -175,18 +174,18 @@ footer p{
 
 /* Small Tablets (portrait and landscape) ----------- */
 @media only screen and (min-width : 569px) and (max-width : 767px) {
-	
+
 	#container{
 		width:95%;
 	}
-	
+
 	.main-header img#logo{
 		margin:auto;
 		display:block;
 		width:65%;
 		transition: width 1s; /* animation */
 	}
-	
+
 	.main-header .main-nav{
 		height:auto;
 		border-radius:5px;
@@ -194,7 +193,7 @@ footer p{
 		display:block;
 		overflow:hidden;
 		width:99%;
-		transition: width 1s; /* animation */	
+		transition: width 1s; /* animation */
 	}
 
 	.main-header .main-nav ul{
@@ -215,23 +214,23 @@ footer p{
 		margin-bottom:2px;
 		text-align:center;
 	}
-	
+
 	.main-header .main-nav li a:hover,.main-header .main-nav li a.active{
 		display:block;
 	}
-	
+
 	#content{
 		overflow:auto;
 		width:99%;
 		float:none;
 	}
-	
+
 
 	#sidebar{
 		width:100%;
 		float:none;
 	}
-	
+
 	#sidebar .block{
 		margin-left:0;
 	}
@@ -243,14 +242,14 @@ footer p{
 	#container{
 		width:95%;
 	}
-	
+
 	.main-header img#logo{
 		margin:auto;
 		display:block;
 		width:95%;
 		transition: width 1s; /* animation */
 	}
-	
+
 	.main-header .main-nav{
 		height:auto;
 		border-radius:5px;
@@ -278,17 +277,17 @@ footer p{
 		margin-bottom:2px;
 		text-align:center;
 	}
-	
+
 	.main-header .main-nav li a:hover,.main-header .main-nav li a.active{
 		display:block;
 	}
-	
+
 	#content{
 		overflow:auto;
 		width:100%;
 		float:none;
 	}
-	
+
 	#content a.readmore{
 		display:block;
 		float:none;
@@ -300,9 +299,8 @@ footer p{
 		width:100%;
 		float:none;
 	}
-	
+
 	#sidebar .block{
 		margin-left:0;
 	}
 }
-
