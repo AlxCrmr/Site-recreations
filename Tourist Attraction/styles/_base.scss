@@ -1,0 +1,367 @@
+// add your custom styles here
+// to learn more about SASS, visit sass-lang.com
+
+body {
+    background: #ecf7f9;
+    font-family: 'Overlock', cursive;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    width: 118.75em;
+    height:auto;
+}
+header div.hero-area {
+    position: relative;
+    max-width: 100%;
+    width: 118.75em;
+    margin-bottom: 2em;
+    & img {
+        max-width: 100%;
+        width: 118.75em;
+    }
+    & div.travel-japan-title {
+        text-align: center;
+        border-radius: 5px;
+        width: 25%;
+        height: 80px;
+        position: absolute;
+        top: 5em;
+        right: 8em;
+        background: rgba(94, 22, 175, .9);
+        & h1 {
+            font-family: 'Bubblegum Sans', cursive;
+            color: #FFF;
+            letter-spacing: 5px;
+            font-size: 4em;
+        }
+    }
+
+}
+header div.hero-area div.lead-box {
+    position: absolute;
+    background:  rgba(23, 126, 178, .7);
+    left: 5%;
+    top: 20%;
+    width: 30%;
+    color: #FFF;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.3em;
+    & button {
+        display: block;
+        background: #c93237;
+        color: #FFF;
+        margin: 1em auto;
+        border: 2px #FFF solid;
+        border-radius: 5px;
+        padding: .3em 1em;
+        &:hover {
+            background: #e00a11;
+            cursor: pointer
+        }
+        &:active{
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+section div.row {
+    position: relative;
+    width: 100%;
+}
+
+section div.section-title {
+    text-align: center;
+    margin: 0 auto 20px;
+    display: block;
+    width: 30%;
+    height: 50px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background:  rgba(23, 126, 178, .7);
+    z-index: 3;
+    color: #FFF;
+    letter-spacing: 6px;
+    font-weight: 400;
+}
+
+img.visit-section-img {
+    width: 100%;
+}
+
+.visit-section-column {
+    position: relative;
+    z-index: 2;
+}
+
+.visit-section-description {
+    text-align: center;
+    background:  rgba(23, 126, 178, .7);
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    padding: 1.2em;
+    height: 230px;
+    font-size: 1.18em;
+    font-weight: 400;
+}
+
+.visit-section-description button{
+    display: block;
+    margin: 1em auto;
+    border: #FFF 2px solid;
+    background: rgb(23, 126, 178);
+    color: #FFF;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+.visit-section-column:hover {
+    cursor: pointer;
+    & .visit-section-description{
+        background: rgba(94, 22, 175, .7);
+    }
+    & button {
+        background: rgb(94, 22, 175);
+    }
+}
+
+.visit-section-description button:hover {
+    cursor: pointer;
+    background: #7a2ad6;
+}
+.visit-section-description button:active {
+    position: relative;
+    top: 1px;
+}
+
+footer {
+    height: 100px;
+    background: #410981;
+    width: 100%;
+    margin-top:2em;
+    color: #FFF;
+    padding: 1em 0;
+    & p {
+        text-align: center;
+        margin: 0 0 5px;
+        font-size: 1.2em;
+    }
+    &.visit-link{
+        font-size: 1.5em !important;
+    }
+
+}
+
+@media only screen and (max-width: 1560px) {
+
+    header div.hero-area div.travel-japan-title {
+            width: 30%;
+    }
+
+    .visit-section-description {
+        font-size: 1.1em;
+    }
+
+    .visit-section-description button{
+        padding: .3em 1em;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    header div.hero-area div.travel-japan-title {
+        width: 40%;
+    }
+    header div.hero-area div.lead-box {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 35%;
+    }
+
+    section div.section-title {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 1198px) {
+    header div.hero-area div.travel-japan-title {
+        right: 3em;
+        height: 60px;
+        & h1 {
+            font-size: 3em;
+        }
+    }
+    header div.hero-area div.lead-box {
+        position: absolute;
+        left: 5%;
+        top: 0%;
+        width: 35%;
+        height: 100%;
+        font-size: 1.4em;
+        padding: 1.5em 1em;
+    }
+    .visit-section-description {
+        height: 100%;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    header div.hero-area div.lead-box {
+        position: absolute;
+        width: 40%;
+        font-size: 1.3em;
+    }
+    .visit-section-column {
+        margin-bottom: 20px;
+    }
+    .visit-section-description {
+        padding-top: 25%;
+    }
+    .visit-section-description button{
+        display: block;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    header div.hero-area div.lead-box {
+        font-size: 1.1em;
+    }
+    .visit-section-description {
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    .visit-section-description {
+        font-size: 1.25em;
+    }
+    section div.section-title {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    header div.hero-area div.travel-japan-title {
+        right: 1em;
+        height: 60px;
+        width: 45%;
+        & h1 {
+            font-size: 3em;
+        }
+    }
+    header div.hero-area div.lead-box {
+        left: 1em;
+        width: 45%;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .visit-section-description {
+        padding-top: 15%;
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 708px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 60%;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    header div.hero-area div.travel-japan-title {
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    .visit-section-description {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 604px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .visit-section-description {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    header div.hero-area div.lead-box p{
+        padding-top: 5%;
+        font-size: 1em;
+    }
+    header div.hero-area div.lead-box button{
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 463px) {
+    .visit-section-description {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    header div.hero-area div.lead-box p{
+        font-size: .9em;
+        padding-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header div.hero-area div.lead-box p{
+    }
+    header div.hero-area div.lead-box button{
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .visit-section-description {
+        padding-top: 5%;
+        font-size: .9em;
+    }
+    .visit-section-description button{
+        padding: .2em 1em;
+    }
+}

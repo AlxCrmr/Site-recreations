@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: .5em;
+}
+body {
+    background: url("../images/nature.jpg") no-repeat top;
+    background-size: cover;
+    color: #FFF;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+h1, h2, h4, h5 {
+    font-family: 'Sirin Stencil', cursive;
+}
+h1{
+    margin: 100px auto 10px;
+    font-size: 3.5em;
+}
+p.lead {
+    font-size: 1.5em;
+}
+
+h2{
+    margin: 50px auto 10px;
+    font-size: 2.5em;
+    color:#26bded;
+    text-shadow: #000000 1.5px 1.5px;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    color:#26bded;
+}
+h4{
+    margin: 40px auto 6px;
+    font-size: 7em;
+    color:#03233C;
+    background-color:  rgba(249, 194, 30, .8);
+}
+
+p.contact {
+    margin: 40px auto 0px;
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 3em;
+    margin: 0px auto 10px;
+}
+p.address{
+    margin: 10px auto;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+p.website {
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    text-shadow:  #000 1px 1px;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media only screen and (max-width:1340px){
+    body {
+        background: url("../images/nature.jpg") no-repeat top;
+        background-size: auto 120%;
+    }
+}
+
+@media only screen and (max-width:1030px){
+    body {
+        background: url("../images/nature.jpg") no-repeat top;
+        background-size: auto 140%;
+    }
+    h1{
+        font-size: 3em;
+    }
+    p.lead{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    h4{
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width:600px){
+    h4{
+        font-size: 4em;
+    }
+}
